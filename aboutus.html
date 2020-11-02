@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Trivel</title>
+    <link rel="icon" type="image/png" href="img/logoTrivelNoFondo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/> -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/contactStyles.css">
+    <!-- <style>
+          @media screen and (max-width: 768px) {
+            body {
+              border: 10px solid blue;
+            }
+          }
+    </style> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+</head>
+    <body>
+        <i class="icon-menu burger-button" id="burger-menu"></i>
+        <header class="header">
+          <div class="container">
+            <figure class="logo">
+              <img src="https://i.imgur.com/VG2Ss0a.png" height="50" alt="Logo de Trivel" />
+            </figure>
+            <nav class="menu">
+              <ol>
+                <li>
+                  <a class="link" href="aboutus.html">About us</a>
+                </li>
+                <li>
+                  <a class="link" href="index.html">Main</a>
+                </li>
+                <li>
+                  <a class="link" href="contact.html">Contact</a>
+                </li>
+                <!-- <li>
+                  <a class="link" href="#packages">Tours</a>
+                </li> -->
+              </ol>
+            </nav>
+            </div>
+        </header>
+        <div>
+          <section class="main">
+            <div class="mainContainer">
+              <div class="item driverimg">
+                <img src="https://i.imgur.com/VdJo3iS.jpg" alt="">
+            </div>
+            <div class="item driverInfo">
+              <h3>Miguel Arturo Hernandez Garcia</h3>
+              <p>Con 20 años de experiencia en el hambito turisco Miguel se encargara de darte el mejor recodido por la bella ciudad de mazatlan</p>
+            </div>
+          </section>
+        </div>
+        <section class="main2">
+            <div class="misvis">
+                <div class="mision">
+                    <div id="misvisdivs"><h1>Mision</h1></div>
+                    <div id="misvisdivs"><p>Buscamos brindar la mejor experiencia para los viajeros que desean visitar nuestro puerto</p></div>
+                </div>  
+                <div class="vision">
+                    <div id="misvisdivs"><h1>Vision</h1></div>
+                    <div id="misvisdivs"><p>Seremos la empresa referente dentro de la zonaen al ambito turisco</p></div>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="contact">
+            <div class="container">
+              <form action="" class="form-email">
+                <h3>Contact us</h3>
+                <input type="text" placeholder="Name" id="name">
+                <input type="text" placeholder="Phone" id="phone">
+                <input type="text" placeholder="E-mail" id="email">
+                <button>Send</button>
+              </form>
+              <div class="social">
+                <a href="" class="social-link twitter"></a>
+                <a href="https://www.facebook.com/MazatlanGroupTours" class="social-link facebook"></a>
+                <a href="" class="social-link instagram"></a>
+              </div>
+            </div>
+          </section>
+        </div>
+        <script>
+            const ipad = window.matchMedia('screen and (max-width: 767px)')
+            const menu = document.querySelector('.menu');
+            // console.log(menu);
+            const burgerButton = document.querySelector('#burger-menu');
+            // console.log(burgerButton);
+      
+      
+            ipad.addListener(validation)
+      
+            function validation(event) {
+              if (event.matches) {
+                burgerButton.addEventListener('click', hideShow)
+              } else {
+                burgerButton.removeEventListener('click', hideShow)
+              }
+            }
+            validation(ipad);
+      
+      
+            function hideShow() {
+              if (menu.classList.contains('is-active')) {
+                menu.classList.remove('is-active');
+              } else {
+                menu.classList.add('is-active');
+              }
+            }
+          </script>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+.main {
+    margin: 15px;
+}
+.main2 {
+    margin: 160px 15px 15px;
+}
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 30px;
+    color: black;
+}
+
+.driverimg img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.contact {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.driverimg {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.driverInfo {
+    text-align: center;
+}
+
+.misvis {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr ;
+}
+
+.misvis #misvisdivs {
+    text-align: center;
+}
+
+.misvis h1 {
+    font-size: 55px;
+}
+
+.misvis p {
+    font-size: 26px;
+}
+
+@media screen and (max-width: 880px) {
+    .mainContainer {
+        grid-template: 1fr / 1fr 1fr 110px 1fr ;
+    }
+
+    .mainContainer h1 {
+        font-size: 25px;
+    }
+
+    .contactInfo img {
+        width: 50px;
+    }
+
+    .driverimg img {
+        width: 110px;
+    }
+
+    .contact {
+        position: unset;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .mainContainer {
+        grid-template: 1fr / 1fr 1fr 110px 1fr ;
+    }
+
+    .contactInfo img {
+        width: 50px;
+    }
+
+    .driverimg img {
+        width: 110px;
+    }
+
+    .misvis {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .mainContainer {
+        grid-template: 1fr 1fr / 1fr 1fr;
+        grid-template-areas:
+                            "contactInfo contactInfo"
+                            "driverImg driverInfo";
+    }
+
+    .driverimg {
+        grid-area: auto;
+    }
+
+    .contactInfo {
+        grid-template: repeat(3, 1fr)/1fr 1fr;
+    }
+
+    .contactInfo div {
+        justify-content: flex-end;
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mainContainer {
+        /* grid-template: 1fr 1fr / 50px 1fr; */
+    }
+
+    .contactInfo {
+        grid-template: repeat(3, 1fr) / 50px 1fr;
+        justify-content: left;
+    }
+
+    .contactInfo #correo,
+                 #phone,
+                 #phone2 {
+    justify-content: center;
+    }
+
+    .contactInfo img {
+        width: 40px;
+    }
+
+    .mainContainer h1 {
+        font-size: 17.5px;
+    }
+
+    .contactInfo div {
+        justify-content: center;
+        margin-right: 0px;
+    }
+}

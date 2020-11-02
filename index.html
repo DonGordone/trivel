@@ -1,0 +1,278 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trivel</title>
+    <link rel="icon" type="image/png" href="img/logoTrivelNoFondo.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"/> -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <style>
+      @media screen and (max-width: 768px) {
+        body {
+          border: 10px solid blue;
+        }
+      }
+    </style> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  </head>
+  <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header">
+      <div class="container">
+        <figure class="logo">
+          <img src="https://i.imgur.com/VG2Ss0a.png" height="50" alt="Logo de Trivel" />
+        </figure>
+        <nav class="menu">
+          <!-- <center class="containerBotones">
+            <a href=""><input class="botones" type="submit" value="Nosotros"></a>
+            <a href=""><input class="botones" type="submit" value="Inicio"></a>
+            <a href=""><input class="botones" type="submit" value="Tours"></a>
+            <a href=""><input class="botones" type="submit" value="Contacto"></a>
+        </center> -->
+          <ol>
+            <li>
+              <a class="link" href="aboutus.html">About us</a>
+            </li>
+            <li>
+              <a class="link" href="index.html">Main</a>
+            </li>
+            <!-- <li>
+              <a class="link" href="contact.html">Contact</a>
+            </li> -->
+            <li>
+              <a class="link" href="#packages">Tours</a>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </header>
+    <div class="slider">
+      <ul>
+          <!-- SOLO IMAGENES DE 1200X800 -->
+          <li><img class="sliderImg" src="https://i.imgur.com/6Es6gG3.jpg" alt=""></li>
+          <li><img class="sliderImg" src="https://i.imgur.com/CbUYEJ4.jpg" alt=""></li>
+          <li><img src="https://i.imgur.com/eN1kaQj.jpg" alt=""></li>
+          <li><img src="https://i.imgur.com/rtjM8Nh.jpg" alt=""></li>
+      </ul>
+  </div>
+    <div class="container">
+      <h2 class="event-list-title" id="packages">PACKAGES</h2>
+    </div>
+   
+    <section id="eventos" class="event-list">
+      <div class="container">
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="https://i.imgur.com/yRTfoMn.jpg" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">City tour</h3>
+            <p class="event-description">Tour of 3 hrs. within the Mazatlan area.</p>
+            <a class="event-url" id="btn-abrir-popup" >Details</a>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="https://i.imgur.com/zuYZQCo.jpg" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Rancho tour (magical towns)</h3>
+            <p class="event-description">Visit to El Quelite, La Noria, Viañata de los Osuna, Ranch cockfighting and show of dancing horses.</p>
+            <a class="event-url" id="btn-abrir-popup2" >Details</a>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="https://i.imgur.com/zBBcmhu.jpg" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Trip to El Recodo and Veranos</h3>
+            <p class="event-description">Visit two wonderful villages where you can do country activities.
+            </p>
+            <a class="event-url" id="btn-abrir-popup3">Details</a>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="https://i.imgur.com/MXhDt3z.jpg" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Trip to stone island (by land)</h3>
+            <p class="event-description">Visit to the island of the stone.
+            </p>
+            <a class="event-url" id="btn-abrir-popup4">Details</a>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="https://i.imgur.com/vQsDmtu.jpg" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Journey to the towns of concord</h3>
+            <p class="event-description">Visit to Concordia, Copala, Colonial and the capital of the Mesillas furniture.</p>
+            <a class="event-url" id="btn-abrir-popup5">Details</a>
+          </div>
+        </article>
+        <article class="event">
+          <figure class="event-imageContainer">
+            <img class="event-image" src="https://i.imgur.com/slM65Ue.jpg" width="500" />
+          </figure>
+          <div class="event-detail">
+            <h3 class="event-title">Second tallest suspension bridge in the world</h3>
+            <p class="event-description">Visiting Baluarte and a view of large amounts of tunnels..</p>
+            <a class="event-url" id="btn-abrir-popup6">Details</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="contacto" class="contact">
+      <div class="container">
+        <form action="" class="form-email">
+          <h3>Contact us</h3>
+          <input type="text" placeholder="Name" id="name">
+          <input type="text" placeholder="Phone" id="phone">
+          <input type="text" placeholder="E-mail" id="email">
+          <button>Send</button>
+        </form>
+        <div class="social">
+          <a href="" class="social-link twitter"></a>
+          <a href="https://www.facebook.com/MazatlanGroupTours" class="social-link facebook"></a>
+          <a href="" class="social-link instagram"></a>
+        </div>
+      </div>
+    </section>
+    <!-- POP UPS -->
+    <div class="overlay" id="overlay">
+      <div class="popup" id="popup">
+        <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>CITY TOUR</h3>
+        <p></p>
+        <ul>
+          <li>Podras disfrutar de un paseo por el malecon mas grande del mundo.</li>
+          <li>Podras disfrutar de el mar en olas altas.</li>
+          <li>Visitaras el centro historico.</li>
+          <li>Disfrutaras la vista desde el faro.</li>
+        </ul>
+        <form action="">
+          <!-- <div class="contenedor-inputs">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+          </div> -->
+          <input type="submit" class="btn-submit" href="purchase.html" value="Purchase">
+        </form>
+      </div>
+    </div>
+    <div class="overlay" id="overlay2">
+      <div class="popup" id="popup2">
+        <a href="#" id="btn-cerrar-popup2" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>RANCHO TOUR</h3>
+        <p>Aqui estara la informacion de todo el documento a cerca de los viajes y todo lo que se necesita saber para hacer las cosas correctas</p>
+        <form action="">
+          <!-- <div class="contenedor-inputs">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+          </div> -->
+          <input type="submit" class="btn-submit" value="Purchase">
+        </form>
+      </div>
+    </div>
+    <div class="overlay" id="overlay3">
+      <div class="popup" id="popup3">
+        <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>TRIP TO EL RECODO AND VERANOS</h3>
+        <p>Aqui estara la informacion de todo el documento a cerca de los viajes y todo lo que se necesita saber para hacer las cosas correctas</p>
+        <form action="">
+          <!-- <div class="contenedor-inputs">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+          </div> -->
+          <input type="submit" class="btn-submit" value="Purchase">
+        </form>
+      </div>
+    </div>
+    <div class="overlay" id="overlay4">
+      <div class="popup" id="popup4">
+        <a href="#" id="btn-cerrar-popup4" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>TRIP TO STONE ISLAND</h3>
+        <p>Aqui estara la informacion de todo el documento a cerca de los viajes y todo lo que se necesita saber para hacer las cosas correctas</p>
+        <form action="">
+          <!-- <div class="contenedor-inputs">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+          </div> -->
+          <input type="submit" class="btn-submit" value="Purchase">
+        </form>
+      </div>
+    </div>
+    <div class="overlay" id="overlay5">
+      <div class="popup" id="popup5">
+        <a href="#" id="btn-cerrar-popup5" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>JOURNEY TO THE TOWNS OF CONCORDIA</h3>
+        <p>Aqui estara la informacion de todo el documento a cerca de los viajes y todo lo que se necesita saber para hacer las cosas correctas</p>
+        <form action="">
+          <!-- <div class="contenedor-inputs">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+          </div> -->
+          <input type="submit" class="btn-submit" value="Purchase">
+        </form>
+      </div>
+    </div>
+    <div class="overlay" id="overlay6">
+      <div class="popup" id="popup6">
+        <a href="#" id="btn-cerrar-popup6" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+        <h3>SECOND TALLEST SUSPENSION BRIDGE IN THE WORLD</h3>
+        <p>Aqui estara la informacion de todo el documento a cerca de los viajes y todo lo que se necesita saber para hacer las cosas correctas</p>
+        <form action="">
+          <!-- <div class="contenedor-inputs">
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="Correo">
+          </div> -->
+          <input type="submit" class="btn-submit" value="Purchase">
+        </form>
+      </div>
+    </div>
+    <!-- <footer class="footer">
+      <div class="container">
+        <div>
+          <p><img src="" width="80" alt=""></p>
+        </div>
+        <div>
+          <p>
+            Designed with ❤️ by <a href="https://twitter.com/">@</a>
+          </p>
+        </div>
+      </div>
+    </footer> -->
+    <script>
+      const ipad = window.matchMedia('screen and (max-width: 767px)')
+      const menu = document.querySelector('.menu');
+      // console.log(menu);
+      const burgerButton = document.querySelector('#burger-menu');
+      // console.log(burgerButton);
+
+
+      ipad.addListener(validation)
+
+      function validation(event) {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow)
+        } else {
+          burgerButton.removeEventListener('click', hideShow)
+        }
+      }
+      validation(ipad);
+
+
+      function hideShow() {
+        if (menu.classList.contains('is-active')) {
+          menu.classList.remove('is-active');
+        } else {
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
